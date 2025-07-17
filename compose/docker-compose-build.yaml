@@ -9,6 +9,8 @@ services:
       REDIS_HOST: redis
     volumes:
       - strigus:/strigus
+    depends_on:
+      - redis
     deploy:
       resources:
         reservations:
